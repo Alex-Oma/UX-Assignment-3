@@ -29,7 +29,7 @@
 /* Here, we create custom navigation bar for my header */
 
 .custom-navbar {
-  background-color: var(--header_footer_light_blue); /* your custom blue */
+  background-color: var(--header_footer_light_blue); 
   color: white;
 }
 
@@ -39,14 +39,15 @@
 }
 
 .custom-navbar .nav-link:hover {
-  color: #ffcc00; /* or any hover color you like */
+  text-decoration: underline;
+  color: #ffcc00; 
 }
 
 
 /* Here, we create custom footer. */
 
 .custom-footer {
-  background-color: var(--header_footer_light_blue); /* replace with your preferred color */
+  background-color: var(--header_footer_light_blue); 
   color: white;
 }
 
@@ -56,15 +57,20 @@
 }
 
 .custom-footer a:hover {
-  color: #ffcc00; /* hover color */
   text-decoration: underline;
+  color: #ffcc00; /* hover color */
 }
-/*
-@media (max-width: 576px) {
-  .custom-footer .container {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
+
+
+/* List for the index.html */
+
+.list-group-item a {
+  text-decoration: none;
+  color: #3e8ebd;
+  font-weight: 500;
 }
-8?
+
+.list-group-item a:hover {
+  text-decoration: underline;
+  color: #2c5c80;
+}
