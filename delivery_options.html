@@ -10,21 +10,29 @@
 <body>
 
   <!-- Header -->
-  <nav class="navbar navbar-expand-lg custom-navbar px-4"> 
+	<nav class="navbar navbar-expand-lg custom-navbar px-4">
+	  <!-- Toggle button for menu to collapse on a mobile device -->
+	  <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
 
-    <a class="navbar-brand text-white" href="#"><strong>☕ Brewtopia</strong></a>
-    <div class="collapse navbar-collapse justify-content-center">
-      <ul class="navbar-nav gap-3">
-        <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#">Menu</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#">Store Locator</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
-      </ul>
-    </div>
-    <div class="text-white">
-      🔍
-    </div>
-  </nav>
+	  <a class="navbar-brand text-white" href="#"><strong>☕ Brewtopia</strong></a>
+
+	  <!-- Collapsible menu so it can be folded on mobile device but unfolds on desktop -->
+	  <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+		<ul class="navbar-nav gap-3">
+		  <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+		  <li class="nav-item"><a class="nav-link text-white" href="#">Menu</a></li>
+		  <li class="nav-item"><a class="nav-link text-white" href="#">Store Locator</a></li>
+		  <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+		</ul>
+	  </div>
+
+	  <!-- Search icon to jump fast to store locator page -->
+	  <div class="text-white">
+		🔍
+	  </div>
+	</nav>
   
   <!-- Footer -->
   <footer class="custom-footer text-center py-3">
