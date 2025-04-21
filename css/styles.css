@@ -26,7 +26,7 @@
   --order_vat: #000000;
 }
 
-/* Here, we create custom navigation bar for my header */
+/* Here, we create custom navigation bar for my header and it is going to be used on all pages */
 
 .custom-navbar {
   background-color: var(--header_footer_light_blue); 
@@ -44,7 +44,7 @@
 }
 
 
-/* Here, we create custom footer. */
+/* Here, we create custom footer and it is going to be used on all pages */
 
 .custom-footer {
   background-color: var(--header_footer_light_blue); 
@@ -62,7 +62,7 @@
 }
 
 
-/* List for the index.html */
+/* List style for the links to other pages present in the index.html */
 
 .list-group-item a {
   text-decoration: none;
@@ -73,4 +73,51 @@
 .list-group-item a:hover {
   text-decoration: underline;
   color: #2c5c80;
+}
+
+
+/* Here, we define custom style for text search box on store locator page */
+
+/* Container background and text */
+.custom-store-finder {
+  background-color: var(--white);   
+  color: var(--black);              
+  padding: 30px;
+  border-radius: 12px;
+}
+
+/* Search text input border */
+.custom-input {
+  border: 2px solid var(--black);   
+  background-color: #76C3E4;   
+  color: var(--white);
+}
+
+/* Search text input focus state style */
+.custom-input:focus {
+  border-color: var(--black);
+  box-shadow: none;
+}
+
+/* Search text input placeholder text color style */
+.custom-input::placeholder {
+  color: var(--white);
+  opacity: 1; /* Here, we make the placeholder text visible */
+}
+
+/* Search button custom style */
+.custom-btn {
+  border: 2px solid var(--black);   
+  border-color: var(--black);
+  background-color: var(--nav_button_dark_blue);   
+  color: white;
+  /* border: none; */
+}
+
+/* Search button style when mouse is hovered over it */
+.custom-btn:hover {
+  border: 2px solid var(--black);   
+  border-color: var(--black);
+  background-color: var(--search_text_box_tinted_blue);
+  color: #fff;
 }
