@@ -5,6 +5,7 @@
   --black: #000000;
   --white: #ffffff;
   --light_grey: #cce0f5;
+  --power_blue: #007bff;
   --delivery_option_highlighter: #0E668B;
   --delivery_option_brand_name: #000000;
   --header_footer_light_blue: #3D97BD;
@@ -130,7 +131,6 @@
 }
 
 
-
 /* Long button custom style */
 .custom-btn-long {
   border: 2px solid var(--black);   
@@ -142,6 +142,7 @@
   font-size: 20px; 
   font-weight: bold;
 }
+
 
 /* Long button style when mouse is hovered over it */
 .custom-btn-long:hover {
@@ -166,4 +167,28 @@
   font-weight: bold;
   font-size: 18px; 
   padding: 10px 20px;
+}
+
+
+/* Style for delivery partners names */
+.delivery-partner-name {
+	color: var(--text_title_large_black);
+	text-align: center;
+	font-weight: bold;
+	font-size: 24px; 
+}
+
+
+/* Delivery partner image custom style */
+.delivery-partner-image {
+  border: 1px solid var(--black);
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+  border-radius: 16px;
+}
+
+/* Delivery partner image custom style when mouse is hovered over it */
+.delivery-partner-image:hover {
+  border-radius: 16px;
+  border: 3px solid var(--power_blue); 
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.6); 
 }
