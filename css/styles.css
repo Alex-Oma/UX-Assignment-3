@@ -1,8 +1,10 @@
 /* Here, we define various colours which are to be used on webpages */
+/* CSS variables documented here with examples: https://www.w3schools.com/css/css3_variables.asp */
 
 :root {
   --black: #000000;
   --white: #ffffff;
+  --light_grey: #cce0f5;
   --delivery_option_highlighter: #0E668B;
   --delivery_option_brand_name: #000000;
   --header_footer_light_blue: #3D97BD;
@@ -101,7 +103,7 @@
 
 /* Search text input placeholder text color style */
 .custom-input::placeholder {
-  color: var(--white);
+  color: var(--light_grey);
   opacity: 1; /* Here, we make the placeholder text visible */
 }
 
@@ -112,7 +114,6 @@
   border-color: var(--black);
   background-color: var(--nav_button_dark_blue);   
   color: white;
-  /* border: none; */
 }
 
 /* Search button style when mouse is hovered over it */
@@ -126,4 +127,43 @@
 /* Style for green text */
 .text-green {
 	color: var(--text_dark_green);
+}
+
+
+
+/* Long button custom style */
+.custom-btn-long {
+  border: 2px solid var(--black);   
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+  border-color: var(--black);
+  background-color: var(--nav_button_dark_blue);   
+  color: white;
+  width: 360px;
+  font-size: 20px; 
+  font-weight: bold;
+}
+
+/* Long button style when mouse is hovered over it */
+.custom-btn-long:hover {
+  border: 2px solid var(--black);   
+  border-color: var(--black);
+  background-color: var(--search_text_box_tinted_blue);
+  color: #fff;
+  width: 360px;
+  font-size: 20px; 
+  font-weight: bold;
+}
+
+
+/* Order total box custom style */
+.order-summary-box {
+  border: 2px solid var(--black);
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+  background-color: var(--order_total_ocean_blue);         
+  color: var(--text_title_large_black);
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px; 
+  padding: 10px 20px;
 }

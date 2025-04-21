@@ -38,25 +38,112 @@
   <div class="container my-4">
   <h3 class="text-center mb-4">Select Delivery Option For Your Online Order</h3>
 
-  <!-- Delivery partners images and names -->
-  <div class="row text-center mb-4 justify-content-center">
-    <div class="col-4 col-sm-3 col-md-4">
-      <img src="assets/images/uber_eats.png" class="img-fluid mb-2 w-100" alt="Uber Eats">
-      <p class="fw-bold small">Uber Eats</p>
-    </div>
-    <div class="col-4 col-sm-3 col-md-4">
-      <img src="assets/images/deliveroo.png" class="img-fluid border border-primary rounded mb-2 w-100" alt="Deliveroo">
-      <p class="fw-bold small">Deliveroo</p>
-    </div>
-    <div class="col-4 col-sm-3 col-md-4">
-      <img src="assets/images/just_eat.png" class="img-fluid mb-2 w-100" alt="Just Eat">
-      <p class="fw-bold small">Just Eat</p>
-    </div>
+	<!-- Delivery partners images and names -->
+	  <div class="row text-center mb-4 justify-content-center">
+		<div class="col-4 col-sm-3 col-md-4">
+		  <img src="assets/images/uber_eats.png" class="img-fluid mb-2 w-100" alt="Uber Eats">
+		  <p class="fw-bold small">Uber Eats</p>
+		</div>
+		<div class="col-4 col-sm-3 col-md-4">
+		  <img src="assets/images/deliveroo.png" class="img-fluid border border-primary rounded mb-2 w-100" alt="Deliveroo">
+		  <p class="fw-bold small">Deliveroo</p>
+		</div>
+		<div class="col-4 col-sm-3 col-md-4">
+		  <img src="assets/images/just_eat.png" class="img-fluid mb-2 w-100" alt="Just Eat">
+		  <p class="fw-bold small">Just Eat</p>
+		</div>
+	  </div>
+  
+	<!-- here, main form goes with all the fields and submit button -->
+	<form>
+	  <!-- Name -->
+	  <div class="row mb-3">
+		<div class="col-12 col-md-2">
+		  <label class="form-label">Name*</label>
+		</div>
+		<div class="col-12 col-md-5 mb-2 mb-md-0">
+		  <input type="text" class="form-control custom-input" placeholder="John" />
+		</div>
+		<div class="col-12 col-md-5">
+		  <input type="text" class="form-control custom-input" placeholder="Smith" />
+		</div>
+	  </div>
+
+	  <!-- Email -->
+	  <div class="row mb-3">
+		<div class="col-12 col-md-2">
+		  <label class="form-label">Email*</label>
+		</div>
+		<div class="col-12 col-md-10">
+		  <input type="email" class="form-control custom-input" placeholder="John.Smith@gmail.com" />
+		</div>
+	  </div>
+
+	  <!-- Phone -->
+	  <div class="row mb-3">
+		<div class="col-12 col-md-2">
+		  <label class="form-label">Phone Number*</label>
+		</div>
+		<div class="col-12 col-md-10">
+		  <input type="text" class="form-control custom-input" placeholder="07932628795" />
+		</div>
+	  </div>
+
+	  <!-- Address -->
+	  <div class="row mb-3">
+		<div class="col-12 col-md-2">
+		  <label class="form-label">Address*</label>
+		</div>
+		<div class="col-12 col-md-10">
+		  <input type="text" class="form-control custom-input mb-2" placeholder="22 Potters Crescent" />
+		  <div class="row g-2">
+			<div class="col-12 col-sm-6 col-md-3">
+			  <input type="text" class="form-control custom-input" placeholder="Hatfield" />
+			</div>
+			<div class="col-12 col-sm-6 col-md-3">
+			  <input type="text" class="form-control custom-input" placeholder="Hertfordshire" />
+			</div>
+			<div class="col-12 col-sm-6 col-md-3">
+			  <input type="text" class="form-control custom-input" placeholder="AL9 8QZ" />
+			</div>
+			<div class="col-12 col-sm-6 col-md-3">
+			  <input type="text" class="form-control custom-input" placeholder="Great Britain" />
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+	  <!-- Time Slot & Comments -->
+	  <div class="row mb-3">
+		<div class="col-12 col-md-2">
+		  <label class="form-label">Time Slot</label>
+		</div>
+		<div class="col-12 col-md-4 mb-2 mb-md-0">
+		  <input type="text" class="form-control custom-input" placeholder="13:00 - 14:00" />
+		</div>
+		<div class="col-12 col-md-2">
+		  <label class="form-label">Optional Comments:</label>
+		</div>
+		<div class="col-12 col-md-4">
+		  <textarea class="form-control custom-input" rows="2" placeholder = "The bell does not work, please knock on the door."></textarea>
+		</div>
+	  </div>
+
+	  <!-- Total amount for the order and the order now button -->
+	  <div class="row align-items-center mt-4">
+		<div class="col-12 col-md-4 mb-3 mb-md-0">
+		  <div class="order-summary-box">Order Total:  £8.52</div>
+		</div>
+		<div class="col-12 col-md-8 text-md-end text-center">
+			<button type="submit" class="btn custom-btn-long">Order Now</button>
+		</div>
+
+	  </div>
+	</form>
+
   </div>
-</div>
 
 
-  </div>  
   
   <!-- Footer -->
   <footer class="custom-footer text-center py-3">
