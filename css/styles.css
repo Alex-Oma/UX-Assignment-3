@@ -51,12 +51,11 @@
   color: white;
 }
 
-.custom-footer a {
+.custom-footer .footer-link {
   color: white;
-  text-decoration: none;
 }
 
-.custom-footer a:hover {
+.custom-footer .footer-link:hover {
   text-decoration: underline;
   color: #ffcc00; /* hover color */
 }
@@ -89,6 +88,7 @@
 /* Search text input border */
 .custom-input {
   border: 2px solid var(--black);   
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
   background-color: #76C3E4;   
   color: var(--white);
 }
@@ -108,6 +108,7 @@
 /* Search button custom style */
 .custom-btn {
   border: 2px solid var(--black);   
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
   border-color: var(--black);
   background-color: var(--nav_button_dark_blue);   
   color: white;
@@ -121,3 +122,5 @@
   background-color: var(--search_text_box_tinted_blue);
   color: #fff;
 }
+
+

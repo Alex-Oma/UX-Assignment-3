@@ -21,7 +21,7 @@
 	  <!-- Collapsible menu so it can be folded on mobile device but unfolds on desktop -->
 	  <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
 		<ul class="navbar-nav gap-3">
-		  <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+		  <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
 		  <li class="nav-item"><a class="nav-link text-white" href="#">Menu</a></li>
 		  <li class="nav-item"><a class="nav-link text-white" href="#">Store Locator</a></li>
 		  <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
@@ -30,7 +30,7 @@
 
 	  <!-- Search icon to jump fast to store locator page -->
 	  <div class="text-white">
-		🔍
+		<a href="store_locator.html">🔍</a>
 	  </div>
 	</nav>
   
@@ -43,16 +43,64 @@
 	  </div>
 	</div>
   
-  
+	<!-- Here the search results section goes -->
+	<div class="container mb-5">
+	  <div class="row g-4 align-items-start">
+
+		<!-- On mobile devices map should be shown first and on desktop second -->
+		<div class="col-12 col-md-7 order-1 order-md-2">
+		  <img src="assets/images/map.png" alt="Map of coffee shops" class="img-fluid rounded shadow">
+		</div>
+
+		<!-- Search Results: First to be shown on desktop and second on mobile -->
+		<div class="col-md-5 order-2 order-md-1">
+		  <h5 class="fw-bold mb-3">Search Results:</h5>
+
+		  <div class="mb-4">
+			<strong>Espresso Vibes</strong><br>
+			<small><strong>Addr:</strong> 20 Coffee Crescent, AL8 2HZ</small><br>
+			<small><strong>Distance:</strong> 0.2 miles</small><br>
+			<small class="text-danger">Closes at 5pm, in 2hr 23 min</small><br>
+			<small>Click&collect, Delivery, In-store<br>WC, Free Wi-Fi, step free access</small>
+		  </div>
+
+		  <div class="mb-4">
+			<strong>Amber Roast</strong><br>
+			<small><strong>Addr:</strong> 7 Maple Avenue, AL8 2EF</small><br>
+			<small><strong>Distance:</strong> 0.2 miles</small><br>
+			<small class="text-danger">Closes at 4:30pm, in 1hr 53 min</small><br>
+			<small>Click&collect, Delivery, In-store<br>WC, Free Wi-Fi, step free access</small>
+		  </div>
+
+		  <div class="mb-4">
+			<strong>The Gilded Cup</strong><br>
+			<small><strong>Addr:</strong> 30 Abbey Road, AL8 9TW</small><br>
+			<small><strong>Distance:</strong> 0.2 miles</small><br>
+			<small class="text-danger">Closes at 5pm, in 2hr 23 min</small><br>
+			<small>Click&collect, Delivery, In-store<br>WC, Free Wi-Fi, step free access</small>
+		  </div>
+
+		  <div class="mb-4">
+			<strong>Velvet Bean Café</strong><br>
+			<small><strong>Addr:</strong> 11 Ashfield Gardens, AL8 7DB</small><br>
+			<small><strong>Distance:</strong> 0.2 miles</small><br>
+			<small class="text-danger">Closes at 5pm, in 2hr 23 min</small><br>
+			<small>Click&collect, Delivery, In-store<br>WC, Free Wi-Fi, step free access</small>
+		  </div>
+		</div>
+
+	  </div>
+	</div>
+
   
   
   <!-- Footer -->
   <footer class="custom-footer text-center py-3">
     <div class="d-flex justify-content-center gap-4">
-      <a href="#" class="text-white text-decoration-none">Careers</a>
-      <a href="#" class="text-white text-decoration-none">About Us</a>
-      <a href="#" class="text-white text-decoration-none">FAQs</a>
-      <a href="#" class="text-white text-decoration-none">T&C</a>
+      <a href="#" class="footer-link text-white">Careers</a>
+      <a href="#" class="footer-link text-white">About Us</a>
+      <a href="#" class="footer-link text-white">FAQs</a>
+      <a href="#" class="footer-link text-white">T&C</a>
     </div>
     <p class="mb-1">© Copyright Brewtopia Design 2025</p>
   </footer>
