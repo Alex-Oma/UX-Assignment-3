@@ -123,4 +123,7 @@
   color: #fff;
 }
 
-
+/* Style for green text */
+.text-green {
+	color: var(--text_dark_green);
+}
