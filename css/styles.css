@@ -1,0 +1,70 @@
+/* Here, we define various colours which are to be used on webpages */
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --delivery_option_highlighter: #0E668B;
+  --delivery_option_brand_name: #000000;
+  --header_footer_light_blue: #3D97BD;
+  --header_text: #ffffff;
+  --footer_text: #ffffff;
+  --input_field_caption: #000000;
+  --input_field_sample_value: #000000;
+  --search_text_box_tinted_blue: #3D97BD;
+  --text_title_large_black: #222222;
+  --icons_dark_blue: #095272;
+  --text_dark_green: #0B7B4B;
+  --order_total_ocean_blue: #98D6FC;
+  --mandatory_input_field_asterisk: #F36F1C;
+  --nav_button_dark_blue: #0E668B;
+  --nav_button_text: #ffffff;
+  --nav_button_rect: #000000;
+  --order_item_subtotal: #0E668B;
+  --order_item_price: #000000;
+  --order_total: #0E668B;
+  --order_subtotal: #000000;
+  --order_vat: #000000;
+}
+
+/* Here, we create custom navigation bar for my header */
+
+.custom-navbar {
+  background-color: var(--header_footer_light_blue); /* your custom blue */
+  color: white;
+}
+
+.custom-navbar .nav-link,
+.custom-navbar .navbar-brand {
+  color: white;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #ffcc00; /* or any hover color you like */
+}
+
+
+/* Here, we create custom footer. */
+
+.custom-footer {
+  background-color: var(--header_footer_light_blue); /* replace with your preferred color */
+  color: white;
+}
+
+.custom-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.custom-footer a:hover {
+  color: #ffcc00; /* hover color */
+  text-decoration: underline;
+}
+/*
+@media (max-width: 576px) {
+  .custom-footer .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+8?
