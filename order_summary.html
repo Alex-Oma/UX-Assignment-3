@@ -40,7 +40,7 @@
     <hr class="custom-divider" />
 
     <!-- coffee frappuccino order item -->
-	<div class="order-item d-flex flex-column flex-md-row justify-content-between align-items-start my-3 border-bottom pb-2">
+	<div class="d-flex justify-content-between align-items-start my-3 border-bottom pb-2">
 	  <div class="d-flex mb-3 mb-md-0 order-left">
 		<img src="assets/images/coffee.png" class="thumb me-2" alt="Coffee" />
 		<div class="item-details">
@@ -52,6 +52,7 @@
 			<button class="btn btn-sm btn-dark">+</button>
 		  </div>
 		</div>
+				
 	  </div>
 	  <div class="text-end order-price">
 		<div class="item-price fw-bold">£3.50</div>
@@ -61,7 +62,7 @@
 
 
     <!-- Panini order item -->
-	<div class="order-item d-flex flex-column flex-md-row justify-content-between align-items-start my-3 border-bottom pb-2">
+	<div class="d-flex justify-content-between align-items-start my-3 border-bottom pb-2">
 	  <div class="d-flex mb-3 mb-md-0 order-left">
 		<img src="assets/images/sandwich.png" class="thumb me-2" alt="Ham and Cheese Panini" />
 		<div class="item-details">
@@ -82,7 +83,7 @@
 
 
     <!-- Cake order item -->
-	<div class="order-item d-flex flex-column flex-md-row justify-content-between align-items-start my-3 border-bottom pb-2">
+	<div class="d-flex justify-content-between align-items-start my-3 border-bottom pb-2">
 	  <div class="d-flex mb-3 mb-md-0 order-left">
 		<img src="assets/images/cake.png" class="thumb me-2" alt="Triple Chocolate Cake" />
 		<div class="item-details">
@@ -101,8 +102,24 @@
 	  </div>
 	</div>
 
+	<!-- Here, we render the totals for the order and use custom styles we defined -->
+	<div class="order-summary text-end text-md-end text-center">
+	  <p class="summary-line">Subtotal: <strong class="summary-value">£7.10</strong></p>
+	  <p class="summary-line">VAT: <strong class="summary-value">£1.42</strong></p>
+	  <p class="summary-total">Total: <strong class="summary-total">£8.52</strong></p>
+	</div>
 
-
+	<!-- Here, we show the buttons to allow the user to progress or go back with the order -->
+	<div class="checkout-buttons row g-2 justify-content-center text-center mt-4">
+	  <!-- Back to menu button rendered here using custom style -->
+	  <div class="col-12 col-md-auto order-2 order-md-1">
+		<button class="btn custom-back-btn px-4">Back to menu</button>
+	  </div>
+	  <!-- Proceed to checkout button rendered here using custom style -->
+	  <div class="col-12 col-md-auto order-1 order-md-2">
+		<button class="btn custom-checkout-btn px-4">Proceed to checkout</button>
+	  </div>
+	</div>
   </div>
   
   <!-- Footer -->

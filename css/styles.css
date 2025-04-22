@@ -24,7 +24,7 @@
   --nav_button_rect: #000000;
   --order_item_subtotal: #0E668B;
   --order_item_price: #000000;
-  --order_total: #0E668B;
+  --order_total: #0d6efd;
   --order_subtotal: #000000;
   --order_vat: #000000;
 }
@@ -252,20 +252,119 @@
 
 
 /* Here, we create responsive media block to make the design adaptable to desktop and mobile devices */
-@media (max-width: 767px) {
-  .order-item {
-    flex-direction: column;
-    align-items: stretch;
-  }
 
+@media (max-width: 767px) {
   .order-left {
     flex-direction: row;
     align-items: flex-start;
   }
-
+  
   .order-price {
-    text-align: left;
+    text-align: right;
     margin-top: 10px;
+  }
+}
+
+
+
+/* Custom style for order totals goes here. */
+/* Divider custom style */
+.custom-divider {
+  border-top: 2px solid #ccc;
+}
+
+/* Container custom style */
+.order-summary {
+  padding: 1rem 0;
+}
+
+/* Text styling for summaries being shown */
+.summary-line {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+.summary-value {
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.summary-total {
+  color: var(--order_item_subtotal);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.summary-total span {
+  color: var(--order_total); 
+}
+
+/* Here, we define media block to make the order totals responsive for mobile and desktop versions */
+@media (max-width: 768px) {
+  .order-summary {
+    text-align: center;
+  }
+
+  .summary-total {
+    font-size: 1.1rem;
+  }
+
+  .summary-line {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* Here, we define custom styles for the buttons on the order summary page.*/
+.custom-checkout-btn,
+.custom-back-btn {
+  background-color: var(--order_item_subtotal); 
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  border: 2px solid var(--black);
+  border-color: var(--black);
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  width: 360px;
+  text-align: center;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+/* Here, we define what happens with the buttons when mouse is hovered on them */
+.custom-checkout-btn:hover,
+.custom-back-btn:hover {
+  border-radius: 8px;
+  border: 2px solid var(--black);   
+  border-color: var(--black);
+  background-color: var(--search_text_box_tinted_blue);
+  color: #fff;
+  width: 360px;
+  font-size: 20px; 
+  font-weight: bold;
+  text-align: center;
+}
+
+/* here, we define custom media block to make both buttons responsive and 
+on mobile show proceed to checkout first and back to menu second while
+on desktop show back to menu on the left side and proceed to checkout on the right */
+@media (max-width: 768px) {
+  .custom-checkout-btn,
+  .custom-back-btn {
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .custom-checkout-btn i,
+  .custom-back-btn i {
+    margin: 0 !important;
+    font-size: 1.2rem;
   }
 }
 
