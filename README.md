@@ -83,12 +83,12 @@ However, for the responsive front-end user interface I've decided to further enh
 - Add contrast border and shadow to text input fields and buttons to make them visually stand out for users;
 - When mouse hovers over a hyperlink in the header menu or footer menu the text becomes underlined to visually inform user which hyperlink is selected.
 
-![Store Locator Page Wireframe Desktop Version](docs/wireframes/store-locator-wireframe-desktop.png)
-![Store Locator Page Wireframe Mobile Version](docs/wireframes/store-locator-wireframe-mobile.png)
-![Order Summary Page Wireframe Desktop Version](docs/wireframes/order-summary-wireframe-desktop.png)
-![Order Summary Page Wireframe Mobile Version](docs/wireframes/order-summary-wireframe-mobile.png)
-![Delivery Option Page Wireframe Desktop Version](docs/wireframes/delivery-option-wireframe-desktop.png)
-![Delivery Option Page Wireframe Mobile Version](docs/wireframes/delivery-option-wireframe-mobile.png)
+![Store Locator Page Wireframe Desktop Version](docs/wireframes/store_locator_wireframe_desktop.png)
+![Store Locator Page Wireframe Mobile Version](docs/wireframes/store_locator_wireframe_mobile.png)
+![Order Summary Page Wireframe Desktop Version](docs/wireframes/order_summary_wireframe_desktop.png)
+![Order Summary Page Wireframe Mobile Version](docs/wireframes/order_summary_wireframe_mobile.png)
+![Delivery Option Page Wireframe Desktop Version](docs/wireframes/delivery_option_wireframe_desktop.png)
+![Delivery Option Page Wireframe Mobile Version](docs/wireframes/delivery_option_wireframe_mobile.png)
 
 ### Information Architecture
 
