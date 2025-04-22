@@ -10,58 +10,62 @@
 <body>
 
   <!-- Header -->
-	<nav class="navbar navbar-expand-lg custom-navbar px-4">
-	  <!-- Toggle button for menu to collapse on a mobile device -->
-	  <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-		<span class="navbar-toggler-icon"></span>
-	  </button>
+  <header>
+    <nav class="navbar navbar-expand-lg custom-navbar px-4" aria-label="Primary navigation">
+      <!-- Toggle button for menu to collapse on a mobile device -->
+      <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-	  <a class="navbar-brand text-white" href="index.html"><strong>☕ Brewtopia</strong></a>
+      <a class="navbar-brand text-white" href="index.html"><strong>☕ Brewtopia</strong></a>
 
-	  <!-- Collapsible menu so it can be folded on mobile device but unfolds on desktop -->
-	  <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
-		<ul class="navbar-nav gap-3">
-		  <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
-		  <li class="nav-item"><a class="nav-link text-white" href="#">Menu</a></li>
-		  <li class="nav-item"><a class="nav-link text-white" href="store_locator.html">Store Locator</a></li>
-		  <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
-		</ul>
-	  </div>
+      <!-- Collapsible menu -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Menu</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="store_locator.html">Store Locator</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+        </ul>
+      </div>
 
-	  <!-- Search icon to jump fast to store locator page -->
-	  <div class="text-white">
-		🔍
-	  </div>
-	</nav>
+      <!-- Search icon to jump to store locator page -->
+      <div class="text-white">
+        <a href="store_locator.html">🔍</a>
+      </div>
+    </nav>
+  </header>
 
-  <!-- Main content on the page -->
-  <div class="container mt-5 text-center">
-    <h1>Welcome to Brewtopia</h1>
-    <p>Your perfect coffee is just a click away ☕</p>
-	
-	<main class="container my-5">
-	  <h2 class="text-center mb-4">My Responsive Pages:</h2>
-	  <ul class="list-group list-group-flush text-center">
-		<li class="list-group-item"><a href="store_locator.html">Store Locator Page</a></li>
-		<li class="list-group-item"><a href="order_summary.html">Order Summary Page</a></li>
-		<li class="list-group-item"><a href="delivery_options.html">Delivery Options Page</a></li>
-	  </ul>
-	</main>
-	
-  </div>
+  <!-- Main content goes here -->
+  <main class="container mt-5 text-center" role="main">
+    <article>
+      <h1>Welcome to Brewtopia</h1>
+      <h3>Your perfect coffee is just a click away ☕</h3>
+    </article>
+
+    <section class="container my-5">
+      <h2 class="text-center mb-4">Please navigate to one of the responsive pages:</h2>
+      <ul class="list-group list-group-flush text-center">
+        <li class="list-group-item"><a href="store_locator.html">Store Locator Page</a></li>
+        <li class="list-group-item"><a href="order_summary.html">Order Summary Page</a></li>
+        <li class="list-group-item"><a href="delivery_options.html">Delivery Options Page</a></li>
+      </ul>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer class="custom-footer text-center py-3">
     <div class="d-flex justify-content-center gap-4">
-      <a href="#" class="text-white text-decoration-none">Careers</a>
-      <a href="#" class="text-white text-decoration-none">About Us</a>
-      <a href="#" class="text-white text-decoration-none">FAQs</a>
-      <a href="#" class="text-white text-decoration-none">T&C</a>
+      <a href="#" class="footer-link text-white">Careers</a>
+      <a href="#" class="footer-link text-white">About Us</a>
+      <a href="#" class="footer-link text-white">FAQs</a>
+      <a href="#" class="footer-link text-white">T&C</a>
     </div>
     <p class="mb-1">© Copyright Brewtopia Design 2025</p>
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

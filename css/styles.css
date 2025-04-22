@@ -55,12 +55,13 @@
 }
 
 .custom-footer .footer-link {
+  text-decoration: none;
   color: white;
 }
 
 .custom-footer .footer-link:hover {
   text-decoration: underline;
-  color: #ffcc00; /* hover color */
+  color: #ffcc00;
 }
 
 

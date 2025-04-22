@@ -10,29 +10,31 @@
 <body class="bg-white">
 
   <!-- Header -->
-	<nav class="navbar navbar-expand-lg custom-navbar px-4">
-	  <!-- Toggle button for menu to collapse on a mobile device -->
-	  <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-		<span class="navbar-toggler-icon"></span>
-	  </button>
+  <header>
+    <nav class="navbar navbar-expand-lg custom-navbar px-4" aria-label="Primary navigation">
+      <!-- Toggle button for menu to collapse on a mobile device -->
+      <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-	  <a class="navbar-brand text-white" href="index.html"><strong>☕ Brewtopia</strong></a>
+      <a class="navbar-brand text-white" href="index.html"><strong>☕ Brewtopia</strong></a>
 
-	  <!-- Collapsible menu so it can be folded on mobile device but unfolds on desktop -->
-	  <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
-		<ul class="navbar-nav gap-3">
-		  <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-		  <li class="nav-item"><a class="nav-link text-white" href="#">Menu</a></li>
-		  <li class="nav-item"><a class="nav-link text-white" href="store_locator.html">Store Locator</a></li>
-		  <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
-		</ul>
-	  </div>
+      <!-- Collapsible menu -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Menu</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="store_locator.html">Store Locator</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+        </ul>
+      </div>
 
-	  <!-- Search icon to jump fast to store locator page -->
-	  <div class="text-white">
-		<a href="store_locator.html">🔍</a>
-	  </div>
-	</nav>
+      <!-- Search icon to jump to store locator page -->
+      <div class="text-white">
+        <a href="store_locator.html">🔍</a>
+      </div>
+    </nav>
+  </header>
   
   <!-- Here, the main content for the order summary page goes -->
   <div class="container py-3">
