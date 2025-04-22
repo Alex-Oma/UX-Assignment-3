@@ -83,22 +83,22 @@ However, for the responsive front-end user interface I've decided to further enh
 - Add contrast border and shadow to text input fields and buttons to make them visually stand out for users;
 - When mouse hovers over a hyperlink in the header menu or footer menu the text becomes underlined to visually inform user which hyperlink is selected.
 
-**Store Locator Page Wireframe Desktop Version**
+#### Store Locator Page Wireframe Desktop Version
 ![Store Locator Page Wireframe Desktop Version](docs/wireframes/store_locator_wireframe_desktop.png)
 
-**Store Locator Page Wireframe Mobile Version**
+#### Store Locator Page Wireframe Mobile Version
 ![Store Locator Page Wireframe Mobile Version](docs/wireframes/store_locator_wireframe_mobile.png)
 
-**Order Summary Page Wireframe Desktop Version**
+#### Order Summary Page Wireframe Desktop Version
 ![Order Summary Page Wireframe Desktop Version](docs/wireframes/order_summary_wireframe_desktop.png)
 
-**Order Summary Page Wireframe Mobile Version**
+#### Order Summary Page Wireframe Mobile Version
 ![Order Summary Page Wireframe Mobile Version](docs/wireframes/order_summary_wireframe_mobile.png)
 
-**Delivery Option Page Wireframe Desktop Version**
+#### Delivery Option Page Wireframe Desktop Version
 ![Delivery Option Page Wireframe Desktop Version](docs/wireframes/delivery_option_wireframe_desktop.png)
 
-**Delivery Option Page Wireframe Mobile Version**
+#### Delivery Option Page Wireframe Mobile Version
 ![Delivery Option Page Wireframe Mobile Version](docs/wireframes/delivery_option_wireframe_mobile.png)
 
 
@@ -141,7 +141,7 @@ Use comments and documentation to explain complex logic and provide context:
 
 ## Folder Structure 
 
-<pre><code>'''text
+<pre><code>
 ├── index.html
 ├── store_locator.html
 ├── delivery_options.html
@@ -173,4 +173,4 @@ Use comments and documentation to explain complex logic and provide context:
 		 ├── coffee.png
 		 ├── sandwich.png
 		 └── cake.png
-'''</code></pre>
+</code></pre>
