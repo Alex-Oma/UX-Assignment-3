@@ -130,6 +130,12 @@
 	color: var(--text_dark_green);
 }
 
+/* Style for red text */
+.text-red {
+	color: var(--mandatory_input_field_asterisk);
+	font-weight: bold;
+}
+
 
 /* Long button custom style */
 .custom-btn-long {
