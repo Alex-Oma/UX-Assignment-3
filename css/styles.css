@@ -192,3 +192,80 @@
   border: 3px solid var(--power_blue); 
   box-shadow: 0 0 10px rgba(0, 123, 255, 0.6); 
 }
+
+
+
+/* Order summary page styles */
+
+/* Here, we define custom style for the order item block */
+.order-item {
+  border-color: #ccc;
+  padding-bottom: 1rem;
+}
+
+/* Here,  we define the custom style for the thumb images of the order items. */
+.thumb {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Here, we define the custom style for the order item title. */
+.item-title {
+  color: #222;         
+  font-size: 1.1rem;   
+}
+
+/* Here, we define the custom style for the order item subtitle. */
+.item-subtitle {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Here, we define the custom style for the order item total price. */
+.item-price {
+  color: #000;
+  font-size: 1rem;
+}
+
+/* Here, we define the custom style for the order item total price breakdown. */
+.item-breakdown {
+  color: var(--order_item_subtotal);
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+/* Here, we define the custom style for the plus/minus button control for the quantity for each order item. */
+.quantity-controls button {
+  font-size: 0.8rem;
+  padding: 2px 8px;
+}
+
+/* Here, we define the style when you hover over the button and add the shadow and highlight it. */
+.quantity-controls button:hover {
+  font-size: 1.0rem;
+  padding: 2px 8px;
+  border: 1px solid var(--power_blue); 
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.6); 
+}
+
+
+/* Here, we create responsive media block to make the design adaptable to desktop and mobile devices */
+@media (max-width: 767px) {
+  .order-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .order-left {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .order-price {
+    text-align: left;
+    margin-top: 10px;
+  }
+}
+
