@@ -6,35 +6,34 @@
   <title>Brewtopia Store Locator</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
 
   <!-- Header -->
-  <header>
-    <nav class="navbar navbar-expand-lg custom-navbar px-4" aria-label="Primary navigation">
-      <!-- Toggle button for menu to collapse on a mobile device -->
-      <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+	<nav class="navbar navbar-expand-lg custom-navbar px-4">
+	  <!-- Toggle button for menu to collapse on a mobile device -->
+	  <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
 
-      <a class="navbar-brand text-white" href="index.html"><strong>☕ Brewtopia</strong></a>
+	  <a class="navbar-brand text-white" href="index.html"><strong>☕ Brewtopia</strong></a>
 
-      <!-- Collapsible menu -->
-      <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
-        <ul class="navbar-nav gap-3">
-          <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">Menu</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="store_locator.html">Store Locator</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
-        </ul>
-      </div>
+	  <!-- Collapsible menu so it can be folded on mobile device but unfolds on desktop -->
+	  <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+		<ul class="navbar-nav gap-3">
+		  <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+		  <li class="nav-item"><a class="nav-link text-white" href="#">Menu</a></li>
+		  <li class="nav-item"><a class="nav-link text-white" href="store_locator.html">Store Locator</a></li>
+		  <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+		</ul>
+	  </div>
 
-      <!-- Search icon to jump to store locator page -->
-      <div class="text-white">
-        <a href="store_locator.html">🔍</a>
-      </div>
-    </nav>
-  </header>
+	  <!-- Search icon to jump fast to store locator page -->
+	  <div class="text-white">
+		<a href="store_locator.html">🔍</a>
+	  </div>
+	</nav>
   
 	<!-- Title and search text box on the page -->
 	<div class="custom-store-finder my-4 text-center">
@@ -50,12 +49,14 @@
 	  <div class="row g-4 align-items-start">
 
 		<!-- On mobile devices map should be shown first and on desktop second -->
-		<div class="col-12 col-md-7 order-1 order-md-2">
-		  <img src="assets/images/map.png" alt="Map of coffee shops" class="img-fluid rounded shadow">
+		<div class="col-md-9 order-1 order-md-2">
+			<div class="ratio ratio-16x9">
+				<div id="map"></div>
+			</div>
 		</div>
 
 		<!-- Search Results: First to be shown on desktop and second on mobile -->
-		<div class="col-md-5 order-2 order-md-1">
+		<div class="col-md-3 order-2 order-md-1">
 		  <h5 class="fw-bold mb-3">Search Results:</h5>
 
 		  <div class="mb-4">
@@ -106,6 +107,39 @@
     </div>
     <p class="mb-1">© Copyright Brewtopia Design 2025</p>
   </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Leaflet Open Source Map -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <!-- Store Locator Script where we initialise the map and also add four markers onto it to simulate the search results -->
+  <script>
+    // Store locations (latitude, longtitude, name)
+    const locations = [
+	   { name: "Espresso Vibes", lat: 51.7637902, lng: -0.2390314 },
+       { name: "Amber Roast", lat: 51.7623389, lng: -0.2391343 },
+       { name: "The Gilded Cup", lat: 51.7615199, lng: -0.2388108 },
+       { name: "Velvet Bean Café", lat: 51.7624026, lng: -0.2393842 }
+    ];
+
+    // Initialize our map and place its center to the center of Hatfield
+    const map = L.map('map').setView([51.7622342, -0.2386491], 17); // Center of Hatfield / Galeria so we show several markers around it on the map
+
+    // Add OpenStreetMap tiles plus also show the attribution details
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Here we add the markers for our coffeeshops onto the map by iterating over the list of markers and adding each onto the map
+    locations.forEach(loc => {
+      L.marker([loc.lat, loc.lng]).addTo(map)
+        .bindPopup(`<strong>${loc.name}</strong>`)
+        .openPopup();
+    });
+  </script>
 
 
 </body>
