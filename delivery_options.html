@@ -12,14 +12,13 @@
   <!-- Header -->
   <header>
     <nav class="navbar navbar-expand-lg custom-navbar px-4" aria-label="Primary navigation">
-      <!-- Toggle button for menu to collapse on a mobile device -->
+	  <!-- Toggle button for menu to collapse on a mobile device -->
       <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <a class="navbar-brand text-white" href="index.html"><strong>☕ Brewtopia</strong></a>
-
-      <!-- Collapsible menu -->
+	  
+	  <!-- Collapsible menu -->
       <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
         <ul class="navbar-nav gap-3">
           <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
@@ -28,136 +27,138 @@
           <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
         </ul>
       </div>
-
-      <!-- Search icon to jump to store locator page -->
+	  
+	  <!-- Search icon to jump to store locator page -->
       <div class="text-white">
         <a href="store_locator.html">🔍</a>
       </div>
     </nav>
   </header>
+
+  <!-- Main content -->
+  <main>
   
-  <!-- here, the main content goes -->
-  <div class="container my-4">
-  <h3 class="text-center mb-4">Select Delivery Option For Your Online Order</h3>
+    <!-- here, the main content goes -->
+    <section class="container my-4">
+      <h1 class="text-center mb-4">Select Delivery Option For Your Online Order</h1>
 
-	<!-- Delivery partners images and names -->
-	  <div class="row text-center mb-4 justify-content-center">
-		<div class="col-4 col-sm-3 col-md-4">
-		  <img src="assets/images/uber_eats.png" class="img-fluid delivery-partner-image mb-2 w-75" alt="Uber Eats">
-		  <p class="fw-bold delivery-partner-name">Uber Eats</p>
-		</div>
-		<div class="col-4 col-sm-3 col-md-4">
-		  <img src="assets/images/deliveroo.png" class="img-fluid delivery-partner-image mb-2 w-75" alt="Deliveroo">
-		  <p class="fw-bold delivery-partner-name">Deliveroo</p>
-		</div>
-		<div class="col-4 col-sm-3 col-md-4">  
-		  <img src="assets/images/just_eat.png" class="img-fluid delivery-partner-image mb-2 w-75" alt="Just Eat">
-		  <p class="fw-bold delivery-partner-name">Just Eat</p>
-		</div>
-	  </div>
-  
-	<!-- here, main form goes with all the fields and submit button -->
-	<form>
-	  <!-- Name field -->
-	  <div class="row mb-3">
-		<div class="col-12 col-md-2">
-		  <label class="form-label">Name</label>
-		  <label class="form-label text-red">*</label>
-		</div>
-		<div class="col-12 col-md-5 mb-2 mb-md-0">
-		  <input type="text" class="form-control custom-input" placeholder="John" />
-		  <label class="form-label">First</label>
-		</div>
-		<div class="col-12 col-md-5">
-		  <input type="text" class="form-control custom-input" placeholder="Smith" />
-		  <label class="form-label">Last</label>
-		</div>
-	  </div>
+      <!-- Delivery Partners -->
+      <section aria-label="Delivery Partners">
+	  
+	    <!-- Delivery partners images and names -->
+        <div class="row text-center mb-4 justify-content-center">
+          <article class="col-4 col-sm-3 col-md-4">
+            <img src="assets/images/uber_eats.png" class="img-fluid delivery-partner-image mb-2 w-75" alt="Uber Eats">
+            <p class="fw-bold delivery-partner-name">Uber Eats</p>
+          </article>
+          <article class="col-4 col-sm-3 col-md-4">
+            <img src="assets/images/deliveroo.png" class="img-fluid delivery-partner-image mb-2 w-75" alt="Deliveroo">
+            <p class="fw-bold delivery-partner-name">Deliveroo</p>
+          </article>
+          <article class="col-4 col-sm-3 col-md-4">
+            <img src="assets/images/just_eat.png" class="img-fluid delivery-partner-image mb-2 w-75" alt="Just Eat">
+            <p class="fw-bold delivery-partner-name">Just Eat</p>
+          </article>
+        </div>
+      </section>
 
-	  <!-- Email field -->
-	  <div class="row mb-3">
-		<div class="col-12 col-md-2">
-		  <label class="form-label">Email</label>
-		  <label class="form-label text-red">*</label>
-		</div>
-		<div class="col-12 col-md-10">
-		  <input type="email" class="form-control custom-input" placeholder="John.Smith@gmail.com" />
-		</div>
-	  </div>
+      <!-- Order Form -->
+      <section aria-label="Order Form">
+        <form>
+          <!-- Name -->
+          <div class="row mb-3">
+            <div class="col-12 col-md-2">
+              <label class="form-label">Name <span class="text-red">*</span></label>
+            </div>
+            <div class="col-12 col-md-5 mb-2 mb-md-0">
+              <input type="text" class="form-control custom-input" placeholder="John" />
+              <label class="form-label">First</label>
+            </div>
+            <div class="col-12 col-md-5">
+              <input type="text" class="form-control custom-input" placeholder="Smith" />
+              <label class="form-label">Last</label>
+            </div>
+          </div>
 
-	  <!-- Phone field -->
-	  <div class="row mb-3">
-		<div class="col-12 col-md-2">
-		  <label class="form-label">Phone Number</label>
-		  <label class="form-label text-red">*</label>
-		</div>
-		<div class="col-12 col-md-10">
-		  <input type="text" class="form-control custom-input" placeholder="07932628795" />
-		</div>
-	  </div>
+          <!-- Email -->
+          <div class="row mb-3">
+            <div class="col-12 col-md-2">
+              <label class="form-label">Email <span class="text-red">*</span></label>
+            </div>
+            <div class="col-12 col-md-10">
+              <input type="email" class="form-control custom-input" placeholder="John.Smith@gmail.com" />
+            </div>
+          </div>
 
-	  <!-- Address field -->
-	  <div class="row mb-3">
-		<div class="col-12 col-md-2">
-		  <label class="form-label">Address</label>
-		  <label class="form-label text-red">*</label>
-		</div>
-		<div class="col-12 col-md-10">
-		  <input type="text" class="form-control custom-input mb-2" placeholder="22 Potters Crescent" />
-		  <label class="form-label">Street Address</label>
-		  <div class="row g-2">
-			<div class="col-12 col-sm-6 col-md-3">
-			  <input type="text" class="form-control custom-input" placeholder="Hatfield" />
-			  <label class="form-label">City</label>
-			</div>
-			<div class="col-12 col-sm-6 col-md-3">
-			  <input type="text" class="form-control custom-input" placeholder="Hertfordshire" />
-			  <label class="form-label">State/Province/Region</label>
-			</div>
-			<div class="col-12 col-sm-6 col-md-3">
-			  <input type="text" class="form-control custom-input" placeholder="AL9 8QZ" />
-			  <label class="form-label">Postal/Zip Code</label>
-			</div>
-			<div class="col-12 col-sm-6 col-md-3">
-			  <input type="text" class="form-control custom-input" placeholder="Great Britain" />
-			  <label class="form-label">Country/Region</label>
-			</div>
-		  </div>
-		</div>
-	  </div>
+          <!-- Phone -->
+          <div class="row mb-3">
+            <div class="col-12 col-md-2">
+              <label class="form-label">Phone Number <span class="text-red">*</span></label>
+            </div>
+            <div class="col-12 col-md-10">
+              <input type="text" class="form-control custom-input" placeholder="07932628795" />
+            </div>
+          </div>
 
-	  <!-- Time slot field and optional comment -->
-	  <div class="row mb-3">
-		<div class="col-12 col-md-2">
-		  <label class="form-label">Time Slot</label>
-		</div>
-		<div class="col-12 col-md-4 mb-2 mb-md-0">
-		  <input type="text" class="form-control custom-input" placeholder="13:00 - 14:00" />
-		</div>
-		<div class="col-12 col-md-2">
-		  <label class="form-label">Optional Comments:</label>
-		</div>
-		<div class="col-12 col-md-4">
-		  <textarea class="form-control custom-input" rows="2" placeholder = "The bell does not work, please knock on the door."></textarea>
-		</div>
-	  </div>
+          <!-- Address -->
+          <div class="row mb-3">
+            <div class="col-12 col-md-2">
+              <label class="form-label">Address <span class="text-red">*</span></label>
+            </div>
+            <div class="col-12 col-md-10">
+              <input type="text" class="form-control custom-input mb-2" placeholder="22 Potters Crescent" />
+              <label class="form-label">Street Address</label>
+              <div class="row g-2">
+                <div class="col-12 col-sm-6 col-md-3">
+                  <input type="text" class="form-control custom-input" placeholder="Hatfield" />
+                  <label class="form-label">City</label>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                  <input type="text" class="form-control custom-input" placeholder="Hertfordshire" />
+                  <label class="form-label">State/Province/Region</label>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                  <input type="text" class="form-control custom-input" placeholder="AL9 8QZ" />
+                  <label class="form-label">Postal/Zip Code</label>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                  <input type="text" class="form-control custom-input" placeholder="Great Britain" />
+                  <label class="form-label">Country/Region</label>
+                </div>
+              </div>
+            </div>
+          </div>
 
-	  <!-- Total amount for the order and the order now button -->
-	  <div class="row align-items-center mt-4">
-		<div class="col-12 col-md-4 mb-3 mb-md-0">
-		  <div class="order-summary-box">Order Total:  £8.52</div>
-		</div>
-		<div class="col-12 col-md-8 text-md-end text-center">
-			<button type="submit" class="btn custom-btn-long">Order Now</button>
-		</div>
+          <!-- Time Slot and Comments -->
+          <div class="row mb-3">
+            <div class="col-12 col-md-2">
+              <label class="form-label">Time Slot</label>
+            </div>
+            <div class="col-12 col-md-4 mb-2 mb-md-0">
+              <input type="text" class="form-control custom-input" placeholder="13:00 - 14:00" />
+            </div>
+            <div class="col-12 col-md-2">
+              <label class="form-label">Optional Comments:</label>
+            </div>
+            <div class="col-12 col-md-4">
+              <textarea class="form-control custom-input" rows="2" placeholder="The bell does not work, please knock on the door."></textarea>
+            </div>
+          </div>
 
-	  </div>
-	</form>
+          <!-- Order Summary and Button -->
+          <div class="row align-items-center mt-4">
+            <div class="col-12 col-md-4 mb-3 mb-md-0">
+              <div class="order-summary-box">Order Total: £8.52</div>
+            </div>
+            <div class="col-12 col-md-8 text-md-end text-center">
+              <button type="submit" class="btn custom-btn-long">Order Now</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </section>
+  </main>
 
-  </div>
-
-
-  
   <!-- Footer -->
   <footer class="custom-footer text-center py-3">
     <div class="d-flex justify-content-center gap-4">
@@ -168,7 +169,6 @@
     </div>
     <p class="mb-1">© Copyright Brewtopia Design 2025</p>
   </footer>
-
 
 </body>
 </html>

@@ -11,92 +11,92 @@
 <body>
 
   <!-- Header -->
-	<nav class="navbar navbar-expand-lg custom-navbar px-4">
-	  <!-- Toggle button for menu to collapse on a mobile device -->
-	  <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-		<span class="navbar-toggler-icon"></span>
-	  </button>
+  <header>
+    <nav class="navbar navbar-expand-lg custom-navbar px-4">
+      <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-	  <a class="navbar-brand text-white" href="index.html"><strong>☕ Brewtopia</strong></a>
+      <a class="navbar-brand text-white" href="index.html"><strong>☕ Brewtopia</strong></a>
 
-	  <!-- Collapsible menu so it can be folded on mobile device but unfolds on desktop -->
-	  <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
-		<ul class="navbar-nav gap-3">
-		  <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-		  <li class="nav-item"><a class="nav-link text-white" href="#">Menu</a></li>
-		  <li class="nav-item"><a class="nav-link text-white" href="store_locator.html">Store Locator</a></li>
-		  <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
-		</ul>
-	  </div>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Menu</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="store_locator.html">Store Locator</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+        </ul>
+      </div>
 
-	  <!-- Search icon to jump fast to store locator page -->
-	  <div class="text-white">
-		<a href="store_locator.html">🔍</a>
-	  </div>
-	</nav>
-  
-	<!-- Title and search text box on the page -->
-	<div class="custom-store-finder my-4 text-center">
-	  <h2 class="mb-4 fw-bold">Find a Coffee Shop Near You</h2>
-	  <div class="input-group justify-content-center mb-4 w-75 mx-auto">
-		<input type="text" class="form-control custom-input" placeholder="Enter city, postcode, or store name">
-		<button class="btn custom-btn" type="button">🔍</button>
-	  </div>
-	</div>
-  
-	<!-- Here the search results section goes -->
-	<div class="container mb-5">
-	  <div class="row g-4 align-items-start">
+      <div class="text-white">
+        <a href="store_locator.html">🔍</a>
+      </div>
+    </nav>
+  </header>
 
-		<!-- On mobile devices map should be shown first and on desktop second -->
-		<div class="col-md-9 order-1 order-md-2">
-			<div class="ratio ratio-16x9">
-				<div id="map"></div>
-			</div>
-		</div>
+  <!-- Main Content -->
+  <main>
+    <!-- Store Finder Intro -->
+    <section class="custom-store-finder my-4 text-center">
+      <h2 class="mb-4 fw-bold">Find a Coffee Shop Near You</h2>
+      <div class="input-group justify-content-center mb-4 w-75 mx-auto">
+        <input type="text" class="form-control custom-input" placeholder="Enter city, postcode, or store name">
+        <button class="btn custom-btn" type="button">🔍</button>
+      </div>
+    </section>
 
-		<!-- Search Results: First to be shown on desktop and second on mobile -->
-		<div class="col-md-3 order-2 order-md-1">
-		  <h5 class="fw-bold mb-3">Search Results:</h5>
+    <!-- Search Results and Map Section -->
+    <section class="container mb-5">
+      <div class="row g-4 align-items-start">
 
-		  <div class="mb-4">
-			<strong>Espresso Vibes</strong><br>
-			<small><strong>Addr:</strong> 20 Coffee Crescent, AL8 2HZ</small><br>
-			<small><strong>Distance:</strong> 0.2 miles</small><br>
-			<small class="text-green">Closes at 5pm, in 2hr 23 min</small><br>
-			<small>Click&collect, Delivery, In-store<br>WC, Free Wi-Fi, step free access</small>
-		  </div>
+        <!-- Map View -->
+        <div class="col-md-9 order-1 order-md-2">
+          <div class="ratio ratio-16x9">
+            <div id="map"></div>
+          </div>
+        </div>
 
-		  <div class="mb-4">
-			<strong>Amber Roast</strong><br>
-			<small><strong>Addr:</strong> 7 Maple Avenue, AL8 2EF</small><br>
-			<small><strong>Distance:</strong> 0.2 miles</small><br>
-			<small class="text-green">Closes at 4:30pm, in 1hr 53 min</small><br>
-			<small>Click&collect, Delivery, In-store<br>WC, Free Wi-Fi, step free access</small>
-		  </div>
+        <!-- Search Results List -->
+        <aside class="col-md-3 order-2 order-md-1">
+          <h5 class="fw-bold mb-3">Search Results:</h5>
 
-		  <div class="mb-4">
-			<strong>The Gilded Cup</strong><br>
-			<small><strong>Addr:</strong> 30 Abbey Road, AL8 9TW</small><br>
-			<small><strong>Distance:</strong> 0.2 miles</small><br>
-			<small class="text-green">Closes at 5pm, in 2hr 23 min</small><br>
-			<small>Click&collect, Delivery, In-store<br>WC, Free Wi-Fi, step free access</small>
-		  </div>
+          <article class="mb-4">
+            <strong>Espresso Vibes</strong><br>
+            <small><strong>Addr:</strong> 20 Coffee Crescent, AL8 2HZ</small><br>
+            <small><strong>Distance:</strong> 0.2 miles</small><br>
+            <small class="text-green">Closes at 5pm, in 2hr 23 min</small><br>
+            <small>Click&collect, Delivery, In-store<br>WC, Free Wi-Fi, step free access</small>
+          </article>
 
-		  <div class="mb-4">
-			<strong>Velvet Bean Café</strong><br>
-			<small><strong>Addr:</strong> 11 Ashfield Gardens, AL8 7DB</small><br>
-			<small><strong>Distance:</strong> 0.2 miles</small><br>
-			<small class="text-green">Closes at 5pm, in 2hr 23 min</small><br>
-			<small>Click&collect, Delivery, In-store<br>WC, Free Wi-Fi, step free access</small>
-		  </div>
-		</div>
+          <article class="mb-4">
+            <strong>Amber Roast</strong><br>
+            <small><strong>Addr:</strong> 7 Maple Avenue, AL8 2EF</small><br>
+            <small><strong>Distance:</strong> 0.2 miles</small><br>
+            <small class="text-green">Closes at 4:30pm, in 1hr 53 min</small><br>
+            <small>Click&collect, Delivery, In-store<br>WC, Free Wi-Fi, step free access</small>
+          </article>
 
-	  </div>
-	</div>
+          <article class="mb-4">
+            <strong>The Gilded Cup</strong><br>
+            <small><strong>Addr:</strong> 30 Abbey Road, AL8 9TW</small><br>
+            <small><strong>Distance:</strong> 0.2 miles</small><br>
+            <small class="text-green">Closes at 5pm, in 2hr 23 min</small><br>
+            <small>Click&collect, Delivery, In-store<br>WC, Free Wi-Fi, step free access</small>
+          </article>
 
-  
-  
+          <article class="mb-4">
+            <strong>Velvet Bean Café</strong><br>
+            <small><strong>Addr:</strong> 11 Ashfield Gardens, AL8 7DB</small><br>
+            <small><strong>Distance:</strong> 0.2 miles</small><br>
+            <small class="text-green">Closes at 5pm, in 2hr 23 min</small><br>
+            <small>Click&collect, Delivery, In-store<br>WC, Free Wi-Fi, step free access</small>
+          </article>
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
   <!-- Footer -->
   <footer class="custom-footer text-center py-3">
     <div class="d-flex justify-content-center gap-4">
@@ -108,39 +108,35 @@
     <p class="mb-1">© Copyright Brewtopia Design 2025</p>
   </footer>
 
-
+  <!-- Scripts -->
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+  
   <!-- Leaflet Open Source Map -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
+  
   <!-- Store Locator Script where we initialise the map and also add four markers onto it to simulate the search results -->
   <script>
-    // Store locations (latitude, longtitude, name)
     const locations = [
-	   { name: "Espresso Vibes", lat: 51.7637902, lng: -0.2390314 },
-       { name: "Amber Roast", lat: 51.7623389, lng: -0.2391343 },
-       { name: "The Gilded Cup", lat: 51.7615199, lng: -0.2388108 },
-       { name: "Velvet Bean Café", lat: 51.7624026, lng: -0.2393842 }
+      { name: "Espresso Vibes", lat: 51.7637902, lng: -0.2390314 },
+      { name: "Amber Roast", lat: 51.7623389, lng: -0.2391343 },
+      { name: "The Gilded Cup", lat: 51.7615199, lng: -0.2388108 },
+      { name: "Velvet Bean Café", lat: 51.7624026, lng: -0.2393842 }
     ];
-
-    // Initialize our map and place its center to the center of Hatfield
-    const map = L.map('map').setView([51.7622342, -0.2386491], 17); // Center of Hatfield / Galeria so we show several markers around it on the map
-
-    // Add OpenStreetMap tiles plus also show the attribution details
+	
+	// Initialize our map and place its center to the center of Hatfield
+    const map = L.map('map').setView([51.7622342, -0.2386491], 17);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
-    // Here we add the markers for our coffeeshops onto the map by iterating over the list of markers and adding each onto the map
+	// Here we add the markers for our coffeeshops onto the map by iterating over the list of markers and adding each onto the map
     locations.forEach(loc => {
       L.marker([loc.lat, loc.lng]).addTo(map)
         .bindPopup(`<strong>${loc.name}</strong>`)
         .openPopup();
     });
   </script>
-
 
 </body>
 </html>

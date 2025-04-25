@@ -12,14 +12,14 @@
   <!-- Header -->
   <header>
     <nav class="navbar navbar-expand-lg custom-navbar px-4" aria-label="Primary navigation">
-      <!-- Toggle button for menu to collapse on a mobile device -->
+	  <!-- Toggle button for menu to collapse on a mobile device -->
       <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <a class="navbar-brand text-white" href="index.html"><strong>☕ Brewtopia</strong></a>
 
-      <!-- Collapsible menu -->
+	  <!-- Collapsible menu -->
       <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
         <ul class="navbar-nav gap-3">
           <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
@@ -29,101 +29,103 @@
         </ul>
       </div>
 
-      <!-- Search icon to jump to store locator page -->
+	  <!-- Search icon to jump to store locator page -->
       <div class="text-white">
         <a href="store_locator.html">🔍</a>
       </div>
     </nav>
   </header>
-  
-  <!-- Here, the main content for the order summary page goes -->
-  <div class="container py-3">
-    <h4 class="text-center fw-bold">Order Summary</h4>
-    <hr class="custom-divider" />
 
-    <!-- coffee frappuccino order item -->
-	<div class="d-flex justify-content-between align-items-start my-3 border-bottom pb-2">
-	  <div class="d-flex mb-3 mb-md-0 order-left">
-		<img src="assets/images/coffee.png" class="thumb me-2" alt="Coffee" />
-		<div class="item-details">
-		  <div class="item-title fw-bold">Coffee Frappuccino</div>
-		  <small class="item-subtitle">Medium Coffee</small>
-		  <div class="quantity-controls mt-1">
-			<button class="btn btn-sm btn-dark">-</button>
-			<span class="mx-2">2</span>
-			<button class="btn btn-sm btn-dark">+</button>
-		  </div>
-		</div>
-				
-	  </div>
-	  <div class="text-end order-price">
-		<div class="item-price fw-bold">£3.50</div>
-		<small class="item-breakdown">2 x £1.75</small>
-	  </div>
-	</div>
+  <!-- Main content -->
+  <main>
+    <section class="container py-3">
+      <h1 class="text-center fw-bold">Order Summary</h1>
+      <hr class="custom-divider" />
 
+      <!-- Order Items Section -->
+      <section aria-label="Order Items">
 
-    <!-- Panini order item -->
-	<div class="d-flex justify-content-between align-items-start my-3 border-bottom pb-2">
-	  <div class="d-flex mb-3 mb-md-0 order-left">
-		<img src="assets/images/sandwich.png" class="thumb me-2" alt="Ham and Cheese Panini" />
-		<div class="item-details">
-		  <div class="item-title fw-bold">Ham and Cheese Panini</div>
-		  <small class="item-subtitle">Small Sandwich</small>
-		  <div class="quantity-controls mt-1">
-			<button class="btn btn-sm btn-dark">-</button>
-			<span class="mx-2">1</span>
-			<button class="btn btn-sm btn-dark">+</button>
-		  </div>
-		</div>
-	  </div>
-	  <div class="text-end order-price">
-		<div class="item-price fw-bold">£2.30</div>
-		<small class="item-breakdown">1 x £2.30</small>
-	  </div>
-	</div>
+        <!-- Coffee Frappuccino -->
+        <article class="d-flex justify-content-between align-items-start my-3 border-bottom pb-2">
+          <div class="d-flex mb-3 mb-md-0 order-left">
+            <img src="assets/images/coffee.png" class="thumb me-2" alt="Coffee" />
+            <div class="item-details">
+              <h2 class="item-title fw-bold h5">Coffee Frappuccino</h2>
+              <p class="item-subtitle small">Medium Coffee</p>
+              <div class="quantity-controls mt-1" aria-label="Change quantity for Coffee Frappuccino">
+                <button class="btn btn-sm btn-dark">-</button>
+                <span class="mx-2">2</span>
+                <button class="btn btn-sm btn-dark">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="text-end order-price">
+            <div class="item-price fw-bold">£3.50</div>
+            <small class="item-breakdown">2 x £1.75</small>
+          </div>
+        </article>
 
+        <!-- Ham and Cheese Panini -->
+        <article class="d-flex justify-content-between align-items-start my-3 border-bottom pb-2">
+          <div class="d-flex mb-3 mb-md-0 order-left">
+            <img src="assets/images/sandwich.png" class="thumb me-2" alt="Ham and Cheese Panini" />
+            <div class="item-details">
+              <h2 class="item-title fw-bold h5">Ham and Cheese Panini</h2>
+              <p class="item-subtitle small">Small Sandwich</p>
+              <div class="quantity-controls mt-1" aria-label="Change quantity for Ham and Cheese Panini">
+                <button class="btn btn-sm btn-dark">-</button>
+                <span class="mx-2">1</span>
+                <button class="btn btn-sm btn-dark">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="text-end order-price">
+            <div class="item-price fw-bold">£2.30</div>
+            <small class="item-breakdown">1 x £2.30</small>
+          </div>
+        </article>
 
-    <!-- Cake order item -->
-	<div class="d-flex justify-content-between align-items-start my-3 border-bottom pb-2">
-	  <div class="d-flex mb-3 mb-md-0 order-left">
-		<img src="assets/images/cake.png" class="thumb me-2" alt="Triple Chocolate Cake" />
-		<div class="item-details">
-		  <div class="item-title fw-bold">Triple Chocolate Cake</div>
-		  <small class="item-subtitle">Medium Slice</small>
-		  <div class="quantity-controls mt-1">
-			<button class="btn btn-sm btn-dark">-</button>
-			<span class="mx-2">1</span>
-			<button class="btn btn-sm btn-dark">+</button>
-		  </div>
-		</div>
-	  </div>
-	  <div class="text-end order-price">
-		<div class="item-price fw-bold">£1.30</div>
-		<small class="item-breakdown">1 x £1.30</small>
-	  </div>
-	</div>
+        <!-- Triple Chocolate Cake -->
+        <article class="d-flex justify-content-between align-items-start my-3 border-bottom pb-2">
+          <div class="d-flex mb-3 mb-md-0 order-left">
+            <img src="assets/images/cake.png" class="thumb me-2" alt="Triple Chocolate Cake" />
+            <div class="item-details">
+              <h2 class="item-title fw-bold h5">Triple Chocolate Cake</h2>
+              <p class="item-subtitle small">Medium Slice</p>
+              <div class="quantity-controls mt-1" aria-label="Change quantity for Triple Chocolate Cake">
+                <button class="btn btn-sm btn-dark">-</button>
+                <span class="mx-2">1</span>
+                <button class="btn btn-sm btn-dark">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="text-end order-price">
+            <div class="item-price fw-bold">£1.30</div>
+            <small class="item-breakdown">1 x £1.30</small>
+          </div>
+        </article>
 
-	<!-- Here, we render the totals for the order and use custom styles we defined -->
-	<div class="order-summary text-end text-md-end text-center">
-	  <p class="summary-line">Subtotal: <strong class="summary-value">£7.10</strong></p>
-	  <p class="summary-line">VAT: <strong class="summary-value">£1.42</strong></p>
-	  <p class="summary-total">Total: <strong class="summary-total">£8.52</strong></p>
-	</div>
+      </section>
 
-	<!-- Here, we show the buttons to allow the user to progress or go back with the order -->
-	<div class="checkout-buttons row g-2 justify-content-center text-center mt-4">
-	  <!-- Back to menu button rendered here using custom style -->
-	  <div class="col-12 col-md-auto order-2 order-md-1">
-		<button class="btn custom-back-btn px-4">Back to menu</button>
-	  </div>
-	  <!-- Proceed to checkout button rendered here using custom style -->
-	  <div class="col-12 col-md-auto order-1 order-md-2">
-		<button class="btn custom-checkout-btn px-4">Proceed to checkout</button>
-	  </div>
-	</div>
-  </div>
-  
+      <!-- Order Totals -->
+      <section class="order-summary text-end text-md-end text-center" aria-label="Order Totals">
+        <p class="summary-line">Subtotal: <strong class="summary-value">£7.10</strong></p>
+        <p class="summary-line">VAT: <strong class="summary-value">£1.42</strong></p>
+        <p class="summary-total">Total: <strong class="summary-total">£8.52</strong></p>
+      </section>
+
+      <!-- Here, we show the buttons to allow the user to progress or go back with the order -->
+      <section class="checkout-buttons row g-2 justify-content-center text-center mt-4" aria-label="Order Actions">
+        <div class="col-12 col-md-auto order-2 order-md-1">
+          <button class="btn custom-back-btn px-4">Back to menu</button>
+        </div>
+        <div class="col-12 col-md-auto order-1 order-md-2">
+          <button class="btn custom-checkout-btn px-4">Proceed to checkout</button>
+        </div>
+      </section>
+    </section>
+  </main>
+
   <!-- Footer -->
   <footer class="custom-footer text-center py-3">
     <div class="d-flex justify-content-center gap-4">
@@ -134,7 +136,6 @@
     </div>
     <p class="mb-1">© Copyright Brewtopia Design 2025</p>
   </footer>
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.js"></script>
 </body>
