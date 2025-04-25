@@ -9,25 +9,30 @@
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- Here, we have the Header section which contains the main navigation menu -->
   <header>
+  
+	<!-- Here, we have the Bootstrap navigation bar which enables responsiveness -->
     <nav class="navbar navbar-expand-lg custom-navbar px-4" aria-label="Primary navigation">
+	
 	  <!-- Toggle button for menu to collapse on a mobile device -->
       <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span> <!-- Icon used for the toggle button -->
       </button>
+
+	  <!-- Brand's logo and the link to the homepage -->
       <a class="navbar-brand text-white" href="index.html"><strong>☕ Brewtopia</strong></a>
-	  
+
 	  <!-- Collapsible menu -->
       <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
-        <ul class="navbar-nav gap-3">
-          <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">Menu</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="store_locator.html">Store Locator</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+        <ul class="navbar-nav gap-3"> <!-- Navigation links used with spacing in between them -->
+          <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li> <!-- Link back to the homepage -->
+          <li class="nav-item"><a class="nav-link text-white" href="#">Menu</a></li> <!-- Link back to the menu page -->
+          <li class="nav-item"><a class="nav-link text-white" href="store_locator.html">Store Locator</a></li> <!-- Link back to the store locator page -->
+          <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li> <!-- Link back to the contact page -->
         </ul>
       </div>
-	  
+
 	  <!-- Search icon to jump to store locator page -->
       <div class="text-white">
         <a href="store_locator.html">🔍</a>
@@ -40,6 +45,8 @@
   
     <!-- here, the main content goes -->
     <section class="container my-4">
+	
+	  <!-- Here, we have the page heading -->
       <h1 class="text-center mb-4">Select Delivery Option For Your Online Order</h1>
 
       <!-- Delivery Partners -->
@@ -47,14 +54,17 @@
 	  
 	    <!-- Delivery partners images and names -->
         <div class="row text-center mb-4 justify-content-center">
+		  <!-- Uber Eats option -->
           <article class="col-4 col-sm-3 col-md-4">
             <img src="assets/images/uber_eats.png" class="img-fluid delivery-partner-image mb-2 w-75" alt="Uber Eats">
             <p class="fw-bold delivery-partner-name">Uber Eats</p>
           </article>
+		  <!-- Deliveroo option -->
           <article class="col-4 col-sm-3 col-md-4">
             <img src="assets/images/deliveroo.png" class="img-fluid delivery-partner-image mb-2 w-75" alt="Deliveroo">
             <p class="fw-bold delivery-partner-name">Deliveroo</p>
           </article>
+		  <!-- Just Eat option -->
           <article class="col-4 col-sm-3 col-md-4">
             <img src="assets/images/just_eat.png" class="img-fluid delivery-partner-image mb-2 w-75" alt="Just Eat">
             <p class="fw-bold delivery-partner-name">Just Eat</p>
@@ -147,6 +157,7 @@
 
           <!-- Order Summary and Button -->
           <div class="row align-items-center mt-4">
+		    <!-- Here, we display the total price of the whole order -->
             <div class="col-12 col-md-4 mb-3 mb-md-0">
               <div class="order-summary-box">Order Total: £8.52</div>
             </div>
@@ -159,14 +170,17 @@
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- Footer section of the page -->
   <footer class="custom-footer text-center py-3">
+    <!-- Flex container used in order to align the footer links horizontally and add spacing in between them -->
     <div class="d-flex justify-content-center gap-4">
-      <a href="#" class="footer-link text-white">Careers</a>
-      <a href="#" class="footer-link text-white">About Us</a>
-      <a href="#" class="footer-link text-white">FAQs</a>
-      <a href="#" class="footer-link text-white">T&C</a>
+	  <!-- Here, we have the Footer navigation links (currently the placeholder being "#" links) -->
+      <a href="#" class="footer-link text-white">Careers</a> <!-- Link back to the careers page -->
+      <a href="#" class="footer-link text-white">About Us</a> <!-- Link back to the about us page -->
+      <a href="#" class="footer-link text-white">FAQs</a> <!-- Link back to the FAQs page -->
+      <a href="#" class="footer-link text-white">T&C</a> <!-- Link back to the terms and conditions page -->
     </div>
+	<!-- Here, we have the Copyright notice -->
     <p class="mb-1">© Copyright Brewtopia Design 2025</p>
   </footer>
 

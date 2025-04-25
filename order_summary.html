@@ -9,23 +9,27 @@
 </head>
 <body class="bg-white">
 
-  <!-- Header -->
+  <!-- Here, we have the Header section which contains the main navigation menu -->
   <header>
+  
+	<!-- Here, we have the Bootstrap navigation bar which enables responsiveness -->
     <nav class="navbar navbar-expand-lg custom-navbar px-4" aria-label="Primary navigation">
+	
 	  <!-- Toggle button for menu to collapse on a mobile device -->
       <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span> <!-- Icon used for the toggle button -->
       </button>
 
+	  <!-- Brand's logo and the link to the homepage -->
       <a class="navbar-brand text-white" href="index.html"><strong>☕ Brewtopia</strong></a>
 
 	  <!-- Collapsible menu -->
       <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
-        <ul class="navbar-nav gap-3">
-          <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">Menu</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="store_locator.html">Store Locator</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+        <ul class="navbar-nav gap-3"> <!-- Navigation links used with spacing in between them -->
+          <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li> <!-- Link back to the homepage -->
+          <li class="nav-item"><a class="nav-link text-white" href="#">Menu</a></li> <!-- Link back to the menu page -->
+          <li class="nav-item"><a class="nav-link text-white" href="store_locator.html">Store Locator</a></li> <!-- Link back to the store locator page -->
+          <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li> <!-- Link back to the contact page -->
         </ul>
       </div>
 
@@ -39,6 +43,7 @@
   <!-- Main content -->
   <main>
     <section class="container py-3">
+	  <!-- Here, we have the Page heading -->
       <h1 class="text-center fw-bold">Order Summary</h1>
       <hr class="custom-divider" />
 
@@ -47,11 +52,15 @@
 
         <!-- Coffee Frappuccino -->
         <article class="d-flex justify-content-between align-items-start my-3 border-bottom pb-2">
+		  <!-- Left side: image and details -->
           <div class="d-flex mb-3 mb-md-0 order-left">
             <img src="assets/images/coffee.png" class="thumb me-2" alt="Coffee" />
             <div class="item-details">
+			  <!-- Item title and description -->
               <h2 class="item-title fw-bold h5">Coffee Frappuccino</h2>
               <p class="item-subtitle small">Medium Coffee</p>
+			  
+			  <!-- buttons in order to adjust the quantities -->
               <div class="quantity-controls mt-1" aria-label="Change quantity for Coffee Frappuccino">
                 <button class="btn btn-sm btn-dark">-</button>
                 <span class="mx-2">2</span>
@@ -59,6 +68,7 @@
               </div>
             </div>
           </div>
+		  <!-- Right side: pricing details -->
           <div class="text-end order-price">
             <div class="item-price fw-bold">£3.50</div>
             <small class="item-breakdown">2 x £1.75</small>
@@ -108,6 +118,7 @@
       </section>
 
       <!-- Order Totals -->
+	  <!-- Section which is responsible for displaying subtotal, tax (VAT), and total amount -->
       <section class="order-summary text-end text-md-end text-center" aria-label="Order Totals">
         <p class="summary-line">Subtotal: <strong class="summary-value">£7.10</strong></p>
         <p class="summary-line">VAT: <strong class="summary-value">£1.42</strong></p>
@@ -126,14 +137,17 @@
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- Footer section of the page -->
   <footer class="custom-footer text-center py-3">
+    <!-- Flex container used in order to align the footer links horizontally and add spacing in between them -->
     <div class="d-flex justify-content-center gap-4">
-      <a href="#" class="footer-link text-white">Careers</a>
-      <a href="#" class="footer-link text-white">About Us</a>
-      <a href="#" class="footer-link text-white">FAQs</a>
-      <a href="#" class="footer-link text-white">T&C</a>
+	  <!-- Here, we have the Footer navigation links (currently the placeholder being "#" links) -->
+      <a href="#" class="footer-link text-white">Careers</a> <!-- Link back to the careers page -->
+      <a href="#" class="footer-link text-white">About Us</a> <!-- Link back to the about us page -->
+      <a href="#" class="footer-link text-white">FAQs</a> <!-- Link back to the FAQs page -->
+      <a href="#" class="footer-link text-white">T&C</a> <!-- Link back to the terms and conditions page -->
     </div>
+	<!-- Here, we have the Copyright notice -->
     <p class="mb-1">© Copyright Brewtopia Design 2025</p>
   </footer>
 
