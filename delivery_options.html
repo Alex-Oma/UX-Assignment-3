@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- HTML's head tag goes here with various meta tags, page's title and links to the CSS resources/files -->
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Brewtopia - Delivery</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brewtopia - Delivery Options Page</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
+<!-- HTML's body tag goes here where main content of the page is contained and to be rendered by a browser -->
 <body>
 
   <!-- Here, we have the Header section which contains the main navigation menu -->
@@ -23,10 +26,10 @@
 	  <!-- Brand's logo and the link to the homepage -->
       <a class="navbar-brand text-white" href="index.html"><strong>☕ Brewtopia</strong></a>
 
-	  <!-- Collapsible menu -->
+	  <!-- Collapsible menu so that on desktop it can be fully shown and on mobile devices it collases -->
       <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
         <ul class="navbar-nav gap-3"> <!-- Navigation links used with spacing in between them -->
-          <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li> <!-- Link back to the homepage -->
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li> <!-- Link back to the homepage -->
           <li class="nav-item"><a class="nav-link text-white" href="#">Menu</a></li> <!-- Link back to the menu page -->
           <li class="nav-item"><a class="nav-link text-white" href="store_locator.html">Store Locator</a></li> <!-- Link back to the store locator page -->
           <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li> <!-- Link back to the contact page -->
@@ -72,80 +75,81 @@
         </div>
       </section>
 
-      <!-- Order Form -->
+      <!-- Order Form with all the fields going on here -->
       <section aria-label="Order Form">
         <form>
-          <!-- Name -->
+          <!-- Name fields to allow user to enter first name and last name -->
           <div class="row mb-3">
             <div class="col-12 col-md-2">
               <label class="form-label">Name <span class="text-red">*</span></label>
             </div>
             <div class="col-12 col-md-5 mb-2 mb-md-0">
-              <input type="text" class="form-control custom-input" placeholder="John" />
+              <input type="text" class="form-control custom-input" placeholder="John">
               <label class="form-label">First</label>
             </div>
             <div class="col-12 col-md-5">
-              <input type="text" class="form-control custom-input" placeholder="Smith" />
+              <input type="text" class="form-control custom-input" placeholder="Smith">
               <label class="form-label">Last</label>
             </div>
           </div>
 
-          <!-- Email -->
+          <!-- Email field -->
           <div class="row mb-3">
             <div class="col-12 col-md-2">
               <label class="form-label">Email <span class="text-red">*</span></label>
             </div>
             <div class="col-12 col-md-10">
-              <input type="email" class="form-control custom-input" placeholder="John.Smith@gmail.com" />
+              <input type="email" class="form-control custom-input" placeholder="John.Smith@gmail.com">
             </div>
           </div>
 
-          <!-- Phone -->
+          <!-- Phone field -->
           <div class="row mb-3">
             <div class="col-12 col-md-2">
               <label class="form-label">Phone Number <span class="text-red">*</span></label>
             </div>
             <div class="col-12 col-md-10">
-              <input type="text" class="form-control custom-input" placeholder="07932628795" />
+              <input type="text" class="form-control custom-input" placeholder="07932628795">
             </div>
           </div>
 
-          <!-- Address -->
+          <!-- Address set of fields -->
           <div class="row mb-3">
             <div class="col-12 col-md-2">
               <label class="form-label">Address <span class="text-red">*</span></label>
             </div>
+			<!-- Separate container to contain all address related fields -->
             <div class="col-12 col-md-10">
-              <input type="text" class="form-control custom-input mb-2" placeholder="22 Potters Crescent" />
+              <input type="text" class="form-control custom-input mb-2" placeholder="22 Potters Crescent">
               <label class="form-label">Street Address</label>
               <div class="row g-2">
                 <div class="col-12 col-sm-6 col-md-3">
-                  <input type="text" class="form-control custom-input" placeholder="Hatfield" />
+                  <input type="text" class="form-control custom-input" placeholder="Hatfield">
                   <label class="form-label">City</label>
                 </div>
                 <div class="col-12 col-sm-6 col-md-3">
-                  <input type="text" class="form-control custom-input" placeholder="Hertfordshire" />
+                  <input type="text" class="form-control custom-input" placeholder="Hertfordshire">
                   <label class="form-label">State/Province/Region</label>
                 </div>
                 <div class="col-12 col-sm-6 col-md-3">
-                  <input type="text" class="form-control custom-input" placeholder="AL9 8QZ" />
+                  <input type="text" class="form-control custom-input" placeholder="AL9 8QZ">
                   <label class="form-label">Postal/Zip Code</label>
                 </div>
                 <div class="col-12 col-sm-6 col-md-3">
-                  <input type="text" class="form-control custom-input" placeholder="Great Britain" />
+                  <input type="text" class="form-control custom-input" placeholder="Great Britain">
                   <label class="form-label">Country/Region</label>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Time Slot and Comments -->
+          <!-- Time Slot and Comments fields using Bootstrap's grid layout elements -->
           <div class="row mb-3">
             <div class="col-12 col-md-2">
               <label class="form-label">Time Slot</label>
             </div>
             <div class="col-12 col-md-4 mb-2 mb-md-0">
-              <input type="text" class="form-control custom-input" placeholder="13:00 - 14:00" />
+              <input type="text" class="form-control custom-input" placeholder="13:00 - 14:00">
             </div>
             <div class="col-12 col-md-2">
               <label class="form-label">Optional Comments:</label>
@@ -155,7 +159,7 @@
             </div>
           </div>
 
-          <!-- Order Summary and Button -->
+          <!-- Order Summary and Odder Now Button go here -->
           <div class="row align-items-center mt-4">
 		    <!-- Here, we display the total price of the whole order -->
             <div class="col-12 col-md-4 mb-3 mb-md-0">
